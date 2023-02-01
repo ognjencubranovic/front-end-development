@@ -1,13 +1,64 @@
-<h1>Introduction to Front-end Development</h1> 
+<!DOCTYPE html>
+<html lang="en">
 
-<p>A front-end developer architects and develops client part of websites and applications using web technologies (languages):</p>
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced CSS - Assignment 1</title>
+    <style>
+        a[href^='https://www.google.com/'] {
+            color: green;
+        }
 
-<ul>
- 
-<li style="color: red;">HTML</li>
- 
-<li style="color: green;">CSS</li>
- 
-<li style="color: blue;">JavaScript</li>
-<LI>PHP</LI>
-</ul>
+        a[href^='https://www.link-group.eu/'] {
+            color: red;
+        }
+
+        #second-div p:nth-of-type(even) {
+            color: blue;
+        }
+
+        #second-div p:nth-of-type(odd) {
+            color: red;
+        }
+
+        #second-div p:last-child:hover {
+            font-style: italic;
+        
+        }
+
+        #second-div p:hover:nth-of-type(10) {
+            font-style: normal;
+        }
+
+        .new {
+            color: yellow;
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Main Heading</h1>
+    <p>Paragraph 1</p>
+    <a href="https://www.google.com/">Google</a>
+    <a href="https://www.google.com/doodles">Google Doodles</a>
+    <a href="https://www.link-group.eu/" target="_blank">Goto Link Group</a>
+    <div id="first-div">
+        <h2>Subheading</h2>
+        <p>Paragraph 2 <span class="new">NEW</span></p>
+        <p>Paragraph 3 <span class="new">NEW</span></p>
+        <div id="second-div">
+            <h3>Sub subheading</h3>
+            <p>Paragraph 4</p>
+            <p>Paragraph 5</p>
+            <p>Paragraph 6</p>
+            <p>Paragraph 7</p>
+            <p>Paragraph 8</p>
+			<p>Paragraph 9</p>
+            <p>Paragraph 10</p>
+        </div>
+    </div>
+    
+</body>
+
+</html>
